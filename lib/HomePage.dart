@@ -9,7 +9,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.grey[300],
       body: SafeArea(
-        child: Column(
+        child: ListView(children: [Column(
           children: [
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 25),
@@ -92,9 +92,9 @@ class HomePage extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(12)),
                             child: Center(
                                 child: Text(
-                              "Boshlash",
-                              style: TextStyle(color: Colors.white),
-                            )),
+                                  "Boshlash",
+                                  style: TextStyle(color: Colors.white),
+                                )),
                           )
                         ],
                       ),
@@ -337,7 +337,7 @@ class HomePage extends StatelessWidget {
               ),
             ),
           ],
-        ),
+        ),],)
       ),
       
     );
